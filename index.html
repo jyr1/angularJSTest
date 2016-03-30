@@ -12,7 +12,12 @@
  </div>
  <div>
  {{error}}
+ {{username}}
  </div>
+  <form name="searchUser" ng-submit="search(username)">
+    <input type="search" required placeholder="Name to find: " ng-model="username" />
+    <input type="submit" value="Search">
+  </form>
 </body>
 
 </html>
